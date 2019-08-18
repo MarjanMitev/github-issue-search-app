@@ -1,2 +1,1 @@
-# github-issue-search-app
-React Interactive app for searching GitHub issues
+# Github Search React app for searching Github issues
