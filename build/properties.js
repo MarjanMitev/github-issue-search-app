@@ -1,6 +1,6 @@
 export const properties = {
     github: {
-        token: "308c7a1386dfc3dc3862deea73b1129d19c2b948",
+        token: "79dd3d70ec275792f15beba4aeb437d0a457f0e2",
         apiUrl: "https://api.github.com/repos"
     },
     build: {

@@ -1,0 +1,110 @@
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0 .3rem;
+    overflow-y: scroll;
+    max-height: 900px;
+
+    .list-item {
+        padding: 10px;
+        border-bottom: 1px solid $gray-light;
+    
+        &:first-child {
+            border-top: 1px solid $gray-light;
+        }
+    
+        &:hover {
+            cursor: pointer;
+            background: $gray-light;
+        }
+
+        .state-icon {
+            display: inline-block;
+            fill: currentColor;
+            margin-right: 5px;
+            vertical-align: middle;
+            margin-top: -3px;
+        
+            &-issue-closed {
+                color: $red;
+            }
+        
+            &-issue-opened {
+                color: $green;
+            }
+        }
+
+        .item-title {
+            display: inline-block;
+            margin: 0 10px 5px 0;
+        
+            a {
+                text-decoration: none;
+                color: $black-one;
+        
+                &:hover {
+                    color: $gray-dark;
+                }
+        
+                span {
+                    font-weight: normal;
+                    font-size: .7em;
+            
+                    &:before {
+                        content: "#";
+                    }
+                }
+            }
+        }
+        
+        .author-avatar {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+        }
+        
+        .item-meta {
+            color: $gray-dark;
+            font-size: .9em;
+        
+            .issue-number {
+                color: $gray-mid-dark;
+            }
+        }
+        
+        .item-date {
+            color: $gray-dark;
+            font-size: .9em;
+            margin-right: 0.5rem;
+            top: .4rem;
+            position: relative;
+        
+            label {
+                color: $gray-darker;
+            }
+        
+            time {
+                margin-left: .3rem;
+            }
+        }
+        
+        .badge {
+            padding: 0 5px;
+            margin-right: 5px;
+            background: $gray-dark;
+            color: $gray-light-two;
+            border-radius: 5px;
+            font-size: 12px;
+        
+            &.badge-state-open {
+                background: $rgb-green;
+                color: white;
+            }
+        
+            &.badge-state-closed {
+                background: $rgb-red;
+                color: white;
+            }
+        }
+    }
+}

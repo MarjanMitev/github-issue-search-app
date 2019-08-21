@@ -1,6 +1,8 @@
-body {
-    text-align: center;
-}
-.red {
-    background-color: greenyellow;
-}
+/* main SCCS file, where all component stylesheets are imported */
+
+@import 'flexboxgrid/dist/flexboxgrid.min.css';
+@import '../styles/variables.scss';
+@import '../styles/global.scss';
+@import '../styles/radio.scss';
+@import '../styles/filter.scss';
+@import '../styles/list.scss';
